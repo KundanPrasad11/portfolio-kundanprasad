@@ -38,11 +38,13 @@
       height: 80px;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      padding: 0px 50px 0px 100px;
+      padding: 0px 100px 0px 100px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: fixed;
+      top: 0;
+      z-index: 1;
     }
 
     #sidelogo {
@@ -104,13 +106,18 @@
     .express img {
       height: 50%;
     }
+
+    .section-title {
+      margin-top: 30px;
+    }
+
   </style>
 </head>
 
 <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
 
 <body>
-  <div id="top">
+  <section id="navbar-top">
     <div id="top">
       <div><a id="logo" href="#">KUNDAN</a></div>
       <div id="sidelogo">
@@ -120,7 +127,7 @@
         <div id="lastsidelogo"><a href="#contact">CONTACT</a></div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- **** Hero Section **** -->
   <section id="hero" class="jumbotron">
@@ -154,6 +161,9 @@
               I enjoy developing websites and have a keen interest in solving problems and coming up with effective solutions.
             </p>
             <p class="about-wrapper__info-text">
+              I find the creativity and visual aspects of Frontend and Backend very interesting and would love the opportunity to grasp more about Web Development.
+            </p>
+            <p class="about-wrapper__info-text">
               I love coding, playing cricket and football.
             </p>
             <span class="d-flex mt-3">
@@ -178,7 +188,7 @@
         <div class="skills-img-item"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
             alt="JAVASCRIPT"></div>
         <div class="skills-img-item"><img
-            src="https://cdn-icons.flaticon.com/png/512/1183/premium/1183672.png?token=exp=1644498273~hmac=71ab211e7da361e0ada04cc8a377ff53"
+            src="assets/react.png"
             alt="REACT"></div>
         <div class="skills-img-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="NodeJS">
         </div>
@@ -187,9 +197,9 @@
         <div class="skills-img-item express"><img src="https://images.tute.io/tute/topic/express-js.png"
             alt="EXPRESSJS"></div>
       </div>
-      <div class="skills-img-container">
+      <!-- <div class="skills-img-container">
 
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -287,7 +297,7 @@
   <!-- **** Footer Section **** -->
   <footer class="footer navbar-static-bottom">
     <div class="container">
-      <a rel="noreferrer" href="#top" class="back-to-top">
+      <a rel="noreferrer" href="#" class="back-to-top">
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
       <div class="social-links">
